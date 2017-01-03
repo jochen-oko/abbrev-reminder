@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>Abbreviations</title>
+	<script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="options.js"></script>
+	<link rel="stylesheet" type="text/css" href="options.css">
+</head>
+<body>
+	<h1>List of Abbreviations</h1>
+
+	<div id="listContainer">
+		<div id="abbreviationsList"></div>
+	</div>
+
+	<div>
+		<h2>Add a new abbreviation:</h2>
+		<div class="error" style="color:darkred;display:none;">All Fields have to be filled.</div>
+		<input id="abbr" type="text"/>
+		<span> </span>
+		<textarea id="longtext" type="text"></textarea>
+		<span> </span>
+
+		<form class="radioForm">
+		  <span>case-sensitive?</span>
+		  <fieldset class="radioButtons">
+		    <input type="radio" id="yes" name="casesensitive" value="yes"><label for="yes">yes</label>
+		    <input type="radio" id="no" name="casesensitive" value="no" checked="checked"><label for="no">no</label>
+		  </fieldset>
+		</form>
+		<!-- <input id="casesensitive" type="text"/> -->
+		<button id="addButton">Add</button>
+	</div>
+
+	<h2>Load a whole file of abbreviations:</h2>
+	<div>
+		<div>use a CSV-file, in the following format:</div>
+		<div>short;long; casesensitive match</div>
+		<div>"abbr;abbreviation;no"</div>
+		<div>"cont'd;continued;yes"</div>
+	</div>
+	<textarea id="csv" class="csvInput" type="text"></textarea>
+	<button id="uploadButton">Upload</button>
+</body>
+</html>

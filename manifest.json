@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Abbreviation-Demystifier",
+  "description": "Adds an overlay to each abbreviation to unfold it.",
+  "version": "0.1",
+  "author":"jochen-oko",
+  "options_page": "options.html",
+
+  "background": {
+  	"scripts": ["background.js"],
+  	"persistent": false
+  },
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Abbreviation-Demystifier"
+  },
+
+  "permissions" : [
+	  "tabs","declarativeContent", "http://*/*",  "https://*/*" 
+  ]
+}

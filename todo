@@ -1,0 +1,8 @@
+* batch load csv data
+* show real popup instead of inline long text. For better multiple line display
+* abbrevation identifiers should be unique.
+* Option page design
+* small popup on icon hover to display all abbreviations
+* icon design
+* remove jquery
+* refactor
